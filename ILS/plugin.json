@@ -1,0 +1,12 @@
+{
+  "ID": "D99078D6-998E-495F-80BC-CC2294E8DB32",
+  "Disabled": false,
+  "ActionKeyword": "ils",
+  "Name": "ILS",
+  "Author": "sharo-jef",
+  "Version": "0.0.1",
+  "Language": "csharp",
+  "Website": "WEB_SITE_URL",
+  "ExecuteFileName": "ILS.dll",
+  "IsGlobal": false
+}
