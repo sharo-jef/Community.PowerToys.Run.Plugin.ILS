@@ -1,5 +1,4 @@
 using System.Windows;
-using ManagedCommon;
 using Wox.Plugin;
 
 namespace PowerToysRunPluginSample
