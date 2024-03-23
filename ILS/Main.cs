@@ -57,7 +57,7 @@ namespace ILS
         private static IEnumerable<SearchResult> Search(string icao)
         {
             var result = new List<SearchResult>();
-            var response = API.GetNavaidData(icao);
+            var response = API.GetAirportData(icao);
             if (response == null)
             {
                 return result;

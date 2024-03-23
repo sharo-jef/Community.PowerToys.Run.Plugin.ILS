@@ -26,7 +26,7 @@ namespace ILS
     }
 #pragma warning restore IDE1006 // 命名スタイル
 
-    public static ApiResponse? GetNavaidData(string icao)
+    public static ApiResponse? GetAirportData(string icao)
     {
       if (icao.Length != 4 || !icao.All(char.IsLetter))
       {
