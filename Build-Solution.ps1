@@ -1,6 +1,6 @@
 $ErrorActionPreference = "Stop"
 
-$Version = "0.0.1"
+$Version = (Get-Content -Raw -Path "$PSScriptRoot\ILS\plugin.json" | ConvertFrom-Json).Version
 
 if (Test-Path -Path "$PSScriptRoot\ILS\bin") {
   Remove-Item -Path "$PSScriptRoot\ILS\bin\*" -Recurse

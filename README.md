@@ -6,8 +6,10 @@ Show ILS frequency.
 
 ## Usage
 
-TBD
+![example](images/example.png)
 
 ## Installation
 
-TBD
+1. Clone this repository.
+1. Run `Build-Solution.ps1`
+1. Unzip `ILS-$Version.zip` and place `%LOCALAPPDATA%\Microsoft\PowerToys\PowerToys Run\Plugins`
