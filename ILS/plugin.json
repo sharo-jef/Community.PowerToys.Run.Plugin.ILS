@@ -4,7 +4,7 @@
   "ActionKeyword": "ils",
   "Name": "ILS",
   "Author": "sharo-jef",
-  "Version": "0.0.2",
+  "Version": "0.0.3",
   "Language": "csharp",
   "Website": "https://github.com/sharo-jef/Community.PowerToys.Run.Plugin.ILS",
   "ExecuteFileName": "ILS.dll",
