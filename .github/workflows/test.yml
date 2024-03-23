@@ -22,3 +22,8 @@ jobs:
       - name: Build
         shell: pwsh
         run: .\Build-Solution.ps1
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          path: ./*.zip
+          if-no-files-found: error
