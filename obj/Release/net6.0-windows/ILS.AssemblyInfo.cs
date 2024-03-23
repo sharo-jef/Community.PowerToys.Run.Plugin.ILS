@@ -11,9 +11,9 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("ILS")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+652f608e06a375850eca4225413e784e8bf577de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e61a796d87f1398cf1cdbe205524db133759501")]
 [assembly: System.Reflection.AssemblyProductAttribute("ILS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ILS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
