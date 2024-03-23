@@ -123,8 +123,7 @@ namespace PowerToysRunPluginSample
             this.context = context;
         }
     }
-}
-" | Tee-Object -FilePath "$PSScriptRoot\$ProjectName\Main.cs"
+}" | Tee-Object -FilePath "$PSScriptRoot\$ProjectName\Main.cs"
 
 # Generate plugin.json
 Write-Output "{
