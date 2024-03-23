@@ -14,7 +14,7 @@ if (Test-Path "$ProjectName.sln") {
 
 $Guid1 = [guid]::NewGuid().ToString().ToUpper()
 $Guid2 = 'EA8F0A99-3F15-4C5E-9A98-0F308C467CD2'
-$PluginId = [guid]::NewGuid().ToString().ToUpper()
+$PluginId = [guid]::NewGuid().ToString().ToUpper() -replace '-', ''
 
 # Generate .sln
 Write-Output "Microsoft Visual Studio Solution File, Format Version 12.00
