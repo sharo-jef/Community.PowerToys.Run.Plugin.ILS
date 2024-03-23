@@ -7,6 +7,7 @@ if (Test-Path -Path "$PSScriptRoot\ILS\bin") {
 }
 
 dotnet build $PSScriptRoot\ILS.sln -c Release /p:Platform="Any CPU"
+# docker run -v "${PSScriptRoot}:/app" -w /app mcr.microsoft.com/dotnet/sdk:8.0 dotnet build ILS.sln -c Release /p:Platform="Any CPU"
 
 Remove-Item -Path "$PSScriptRoot\ILS\bin\*" -Recurse -Include *.xml, *.pdb, PowerToys.*, Wox.*
 Rename-Item -Path "$PSScriptRoot\ILS\bin\Release" -NewName "ILS"
