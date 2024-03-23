@@ -5,20 +5,19 @@ namespace PowerToysRunPluginSample
 {
     public class Main : IPlugin
     {
-        private PluginInitContext? context { get; set; }
+        private PluginInitContext? Context { get; set; }
 
         public string Name => "ILS";
 
         public string Description => "";
 
-        public static string PluginID => "D99078D6-998E-495F-80BC-CC2294E8DB32";
+        public static string PluginID => "D99078D6998E495F80BCCC2294E8DB32";
 
         public List<Result> Query(Query query)
         {
             return new List<Result>
             {
-                new Result
-                {
+                new() {
                     Title = "Item1",
                     SubTitle = "Item1 Subtitle",
                     Action = e =>
@@ -32,7 +31,7 @@ namespace PowerToysRunPluginSample
 
         public void Init(PluginInitContext context)
         {
-            this.context = context;
+            Context = context;
         }
     }
 }
