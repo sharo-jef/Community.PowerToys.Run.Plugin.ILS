@@ -46,7 +46,10 @@ namespace ILS
       var httpClient = new HttpClient();
       var response = httpClient.GetAsync(searchUrl).GetAwaiter().GetResult();
       var content = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
-      File.WriteAllText($"{tmp}/{icao}.json", content, System.Text.Encoding.UTF8);
+      if (!content.Contains("Error"))
+      {
+        File.WriteAllText($"{tmp}/{icao}.json", content, System.Text.Encoding.UTF8);
+      }
       var result = JsonSerializer.Deserialize<ApiResponse>(content);
       return result;
     }
